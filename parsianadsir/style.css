@@ -1,0 +1,99 @@
+a:link, a:visited {
+color : #fff;
+text-decoration : none;
+font-size:0px;
+}
+a img {
+border : 0;
+}
+div.wrap {
+width : 620px;
+padding:16px 15px 0 0;
+}
+div#top div#nav {
+float : left;
+clear : both;
+width : 620px;
+height : 52px;
+margin : -10px;
+}
+div#top div#nav ul {
+float : left;
+width : 620px;
+height : 52px;
+list-style-type : none;
+}
+div#nav ul li {
+float : left;
+height : 52px;
+}
+div#nav ul li a {
+border : 0;
+height : 52px;
+display : block;
+line-height : 52px;
+text-indent : -9999px;
+}
+div#header {
+margin : -1px 0 0;
+}
+div#video-header {
+height : 200px;
+margin : -1px 0 0;
+}
+div#header div#slide-holder {
+z-index : 40;
+width : 620px;
+height : 200px;
+position : absolute;
+}
+div#header div#slide-holder div#slide-runner {
+top : 0px;
+left : 0px;
+width : 620px;
+height : 200px;
+overflow : hidden;
+position : absolute;
+}
+div#header div#slide-holder img {
+margin : 0;
+display : none;
+position : absolute;
+}
+div#header div#slide-holder div#slide-controls {
+left : 0;
+width : 620px;
+display : none;
+position : absolute;
+}
+div#header div#slide-holder div#slide-controls p.text {
+display:none;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav {
+float : right;
+display : inline;
+margin : 0px 260px 0 0;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a {
+float : left;
+width : 10px;
+height : 10px;
+display : inline;
+font-size : 0px;
+margin : 180px 15px 0 0;
+line-height : 10px;
+font-weight : bold;
+text-align : center;
+text-decoration : none;
+background-position : 0 0;
+background-repeat : no-repeat;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a.on {
+background-position : 0 -10px;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a {
+background-image : url(img/silde-nav.png);
+}
+div#nav ul li a {
+background :none;
+}

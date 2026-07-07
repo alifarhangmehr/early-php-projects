@@ -1,0 +1,80 @@
+<?php
+session_start();
+if(!isset($_SESSION['validAdmin'])) exit;
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../themes/default/css/index.css"/>
+<title>افزودن امضأ</title>
+</head>
+<body>
+
+
+<?php
+include("header.php");
+?>
+
+
+<?php
+	require('../class/connection.php');
+	$connector=new connection();
+	if(!$connector->dbConnect()) echo 'error 1';
+	$query="SELECT MAX(patientId) FROM patient";
+	$result=$connector->queryRun($query);
+	$row = mysql_fetch_array($result);
+	//echo $row['MAX(foodCode)'];
+	$patientId=$row['MAX(patientId)']+1;
+	//echo '<br />patientId:'.$patientId.'<br />';
+	
+?>
+
+
+
+<form method="post" action="addSignatureP.php" enctype="multipart/form-data">
+<div align="center">
+<?php
+if($_POST['patientId']!='') echo '<input type="hidden" name="patientId" id="patientId" value="'.$_POST['patientId'].'" />';
+if($_POST['patientId']!='') echo '<input type="hidden" name="condition" id="condition" value="'.$_POST['condition'].'" />';	
+?>
+<fieldset style="width:750px">
+<legend align="center" style="color:#666">امضأ</legend>
+<br /><br /><br />
+<br />
+<table align="center" width="550px" border="0">
+<colgroup></colgroup>
+<colgroup></colgroup>
+<colgroup style="background:#CCC"></colgroup>
+  <tr style="display:none">
+    <td width="154" align="right"><input type="text" name="signatureId" id="signatureId" /></td>
+    <td width="148" align="right">امضأ</td>
+    <td width="20" align="center">0</td>
+  </tr>
+  <tr>
+    <td width="154" align="right"><input type="text" name="name" id="name" /></td>
+    <td width="148" align="right">نام</td>
+    <td width="20" align="center">1</td>
+  </tr>
+  <tr>
+    <td width="154" align="right"><input type="text" name="family" id="family" /></td>
+    <td width="148" align="right">نام خانوادگی</td>
+    <td width="20" align="center">2</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><input type="submit" value="اضافه کن" /></td>
+  </tr>
+  
+</table>
+</fieldset>
+
+
+</div>
+</form>
+
+<?php
+include("header.php");
+?>
+
+</body>
+</html>

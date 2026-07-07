@@ -1,0 +1,402 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	background:#000;
+	color:#FFF;
+	font-size:12px;
+	direction:rtl;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+body{
+	background:#000;
+	color:#FFF;
+	font-size:12px;
+	direction:rtl;
+	font-family:Tahoma, Geneva, sans-serif;
+	
+}
+a {
+	color: #CCC;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #00CCFF;
+}
+
+a img {
+  border: none;/*remove border for linked images*/
+}
+input{
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+
+#adminToolsDiv{
+	position:absolute;
+	
+	
+	
+}
+#userSearchSubmitBut,#newsSearchSubmitBut{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	background:#39F;
+	color:#FFF;
+	border:solid thin #fff;
+	
+	
+}
+
+/*******************************editNews.php******************************/
+#showNewsTable,#showUserTable,#searchUserTable{
+	background:#000;
+	width:100%;
+	color:#FFF;
+	border:thin solid #F60;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	
+	
+}
+#showNewsBodyBut,#htmlEditorTransferBut,#showBriefBut,#confrimNoBut{
+	color:#FFF;
+	background:#F90;
+	border:thin #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bolde;
+	text-align: center;
+	border:none;
+}
+
+#showEditBut,#showCBodyBut,#confrimYesBut,#changeUsersDetaisBut,#registerUserBut{
+	color:#FFF;
+	background:#090;
+	border:thin #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bolde;
+	text-align: center;
+	border:none;
+}
+#insertNewsBut,#editNewsBut{
+	color:#FFF;
+	background:#090;
+	border:thin #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bolde;
+	text-align: center;
+	border:none;
+	
+}
+
+#briefDiv{
+    width: 600px;
+    margin-left: -300px;
+    position:fixed;
+    top: 100px;
+    left: 50%;
+    background-color:#000;
+	visibility:hidden;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	border:solid thin #F90;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-align:center;
+}
+#outerBriefDiv{
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    overflow: visible;
+	
+}
+#newsBodyDiv{
+    width: 600px;
+    margin-left: -300px;
+    position:fixed;
+    top: 100px;
+    left: 50%;
+    background-color:#000;
+	display:none;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	border:solid thin #F90;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-align:center;
+}
+#outerNewsBodyDiv{
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    overflow: visible;
+	
+}
+
+#editDiv{
+	width: 300px;
+    margin-left: -150px;
+    position:fixed;
+    top: 100px;
+    left: 50%;
+    background-color:#000;
+	display:none;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	border:solid thin #F90;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-align:center;
+}
+
+#outerEditDiv{
+	position: fixed;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    overflow: visible;
+}
+#lastModifiedDetailsDiv,#adminAwnserTimeDiv{
+	width: 300px;
+    margin-left: -150px;
+    position:fixed;
+    top: 100px;
+    left: 50%;
+    background-color:#000;
+	display:none;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	border:solid thin #F90;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-align:center;
+}
+#outerLastModifiedDetailsDiv,#outerAdminAwnserTimeDiv{
+	position: fixed;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    overflow: visible;
+	
+}
+
+/**************************deleteNews.php********************************************/
+#outerDeleteNewsDiv,#outerDeleteNewsDiv{
+	position: fixed;
+    top: 30%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    overflow: visible;
+}
+
+#deleteNewsDiv,#deleteNewsDiv{
+	width: 300px;
+    margin-left: -150px;
+    position:fixed;
+    left: 50%;
+    background-color:#000;
+	display:none;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	border:solid thin #F90;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-align:center;
+}
+
+#yesDeleteNewsBut,#deleteNewsBut,#yesDeleteCommentBut{
+	color:#FFF;
+	background:#F60;
+	border:thin #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bolde;
+	text-align: center;
+	border:none;
+}
+#noDeleteNewsBut,#noDeleteCommentBut{
+	color:#FFF;
+	background:#090;
+	border:thin #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bolde;
+	text-align: center;
+	border:none;
+}
+
+/*******************userComments.php*******************/
+
+
+
+#outerCBodyDiv{
+	position: fixed;
+    top: 30%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    overflow: visible;
+}
+
+
+#outerCBodyDiv{
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;	
+}
+
+
+#cBodyDiv{
+    width: 500px;
+    margin-left: -250px;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    background-color:#000;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	display:none;
+	border:solid thin #F90;
+	font-family:Tahoma, Geneva, sans-serif;
+	overflow:auto;
+	max-height:500px;
+}
+#cPanelDiv{
+	position:fixed;
+	background:#000;
+	height:22px;
+	
+}
+.redBut{
+	color:#FFF;
+	background:#F90;
+	border:thin #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bolde;
+	text-align: center;
+	border:none;
+}
+
+.greenBut{
+	color:#FFF;
+	background:#090;
+	border:thin #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bolde;
+	text-align: center;
+	border:none;
+}
+.table1{
+	background:#000;
+	width:100%;
+	color:#FFF;
+	border:thin solid #F60;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	
+	
+}
+.table2{
+	background:#000;
+	width:100%;
+	color:#FFF;
+	border:thin solid #6C0;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	
+	
+}
+
+#msgTextDiv{
+	width: 620px;
+    margin-left: -310px;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    background-color:#000;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	display:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	overflow:auto;
+	max-height:500px;
+	border: thin solid #F90;
+	padding:10px;	
+}
+#outerMsgTextDiv{
+	position: fixed;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+}
+#msgTextPanelDiv,#adminAwnserPanelDiv{
+	position:fixed;
+	background:#000;
+	height:22px;
+	width:600px;
+	
+}
+
+
+#msgReplyDiv{
+	width: 620px;
+    margin-left: -310px;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    background-color:#000;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	display:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	overflow:auto;
+	max-height:500px;
+	border: thin solid #F90;
+	padding:10px;	
+}
+#outerMsgReplyDiv{
+	position: fixed;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+}
+
+
+
+
+
+#adminAwnserDiv{
+	width: 620px;
+    margin-left: -310px;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    background-color:#000;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	display:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	overflow:auto;
+	max-height:500px;
+	border: thin solid #F90;
+	padding:10px;	
+}
+#outerAdminAwnserDiv{
+	position: fixed;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+}
+
+#adminPanelTable{
+	border:thin solid #06F;
+	background:#333;
+	
+	
+}

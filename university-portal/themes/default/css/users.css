@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	background:#000;
+	color:#FFF;
+	font-size:12px;
+	direction:rtl;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+body{
+	background:#000;
+	color:#FFF;
+	font-size:12px;
+	direction:rtl;
+	font-family:Tahoma, Geneva, sans-serif;
+	
+}
+a {
+	text-decoration:none;
+} 
+a:link {color:#000}      /* unvisited link */
+a:visited {color:#000}  /* visited link */
+a:hover {color:#000} /* mouse over link */
+a:active {color:#000}  /* selected link */ 
+
+
+
+.redBut{
+	color:#FFF;
+	background:#F90;
+	border:thin #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bolde;
+	text-align: center;
+	border:none;
+}
+
+.greenBut{
+	color:#FFF;
+	background:#090;
+	border:thin #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bolde;
+	text-align: center;
+	border:none;
+}
+.table1{
+	background:#000;
+	width:100%;
+	color:#FFF;
+	border:thin solid #F60;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	
+	
+}
+.table2{
+	background:#000;
+	width:100%;
+	color:#FFF;
+	border:thin solid #6C0;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	
+	
+}
+
+
+#msgTextDiv,#adminAwnserDiv{
+	width: 620px;
+    margin-left: -310px;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    background-color:#000;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	display:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	overflow:auto;
+	max-height:500px;
+	border: thin solid #F90;
+	padding:10px;	
+}
+#outerMsgTextDiv,#outerAdminAwnserDiv{
+	position: fixed;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+}
+#msgTextPanelDiv,#adminAwnserPanelDiv{
+	position:fixed;
+	background:#000;
+	height:22px;
+	width:600px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

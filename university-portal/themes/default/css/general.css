@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	background:#CCC;
+	margin:0px;
+	
+	
+}
+table{
+	background:#DBE9FD;
+	color:#09F;
+	border:thin solid #F90;
+		
+	
+}
+input{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	border:thin solid #999;
+	background:transparent;
+	
+}
+

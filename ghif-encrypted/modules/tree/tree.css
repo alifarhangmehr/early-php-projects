@@ -1,0 +1,39 @@
+.parentTreeNode {
+	color: #000000;
+	font-size:12px;
+    text-decoration: none;
+	border: 1px solid transparent;
+	padding: 0px 3px 0px 3px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+.parentTreeNode:hover {
+	color: #666666;
+	border: 1px solid #000000;
+	background-color: #EEEEEE;
+}
+.normalTreeNode {
+	color: #000000;
+	font-size:11px;
+	text-decoration: none;
+	border: 1px solid transparent;
+	display: block;
+	padding: 0px 3px 0px 3px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+.normalTreeNode:hover {
+	color: #666666;
+	border: 1px solid #000000;
+	background-color: #EEEEEE;
+}
+.expandCollapse {
+	color: #000000;
+	font-size:xx-small;
+	border: 1px solid transparent;
+	padding: 0px 3px 0px 3px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+.expandCollapse:hover {
+	color: #666666;
+	background-color: #EEEEEE;
+	border: 1px solid #000000;
+}

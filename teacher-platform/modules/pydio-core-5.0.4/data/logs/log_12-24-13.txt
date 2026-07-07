@@ -1,0 +1,2 @@
+12-24-13 16:43:01	::1	INFO	shared	Create User	user_id=admin
+12-24-13 16:43:01	::1	INFO	shared	Create User	user_id=login

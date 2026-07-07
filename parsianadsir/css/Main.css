@@ -1,0 +1,28 @@
+body{
+	background-image:url(../img/bgbody.jpg); font-family:tahoma; font-size:12px;
+}
+a:link,a:active,a:visited{color:#7ba003; text-decoration:none;}
+a:hover{color:#333;}
+.menu{width:900px; height:12px; background:#333; border-radius:10px; margin-top:-45px; text-align:right; font-family:tahoma; font-size:12px; padding:10px 0 14px 0; border-top-left-radius:0px; border-top-right-radius:0px;}
+.menu a:link{color:#fff; text-decoration:none; padding:5px 21px 7px 21px; margin-right:10px;}
+.menu a:hover{color:#fff; text-decoration:none; background:#444; border-radius:5px; padding:5px 21px 7px 21px; margin-right:10px;}
+.menu a:active{color:#fff; text-decoration:none; padding:5px 21px 7px 21px; margin-right:10px;}
+.menu a:visited{color:#fff; text-decoration:none; padding:5px 21px 7px 21px; margin-right:10px;}
+.divtr{height:47px; width:890px; background:#333; position:absolute; margin:100px 0 0 0; padding:5px; border-radius:10px; border-bottom-right-radius:0px; border-bottom-left-radius:0px;}
+.divtd{height:47px; width:219px; background:#fff; float:right; border-radius:10px;}
+.divtd2{height:47px; width:219px; background:#fff; border-radius:10px;}
+.box{
+	background:#DDD; border-radius:7px; color:#65685c;
+}
+.li{color:#7ba003; margin-right:25px; float:right; direction:rtl; vertical-align:middle; list-style-type:square;}
+.topline{width:101%; background:#7ba003; height:5px; margin:-9px 0 0 -10px;}
+.vbanner{width:235px; height:120px; background:url(../img/vbanner.gif); margin-bottom:20px;}
+.hbanner{width:640px; height:120px; background:url(../img/hbanner.gif); margin-bottom:20px;}
+.ftr{width:886px; height:5px; margin-top:30px; background:#333; border-radius:5px; text-align:left; font-family:tahoma;
+	font-size:12px; padding:3px 0 14px 20px; color:#fff;}
+hr{color:#7ba003; border:solid thin; width:900px; margin:0; clear:both;}
+h2{font-family:tahoma; font-size:13px; color:#333; text-align:right; padding-right:10px; direction:rtl}
+.sala{border:#999 solid thin; width:170px;  border-radius:5px; float:left; margin-left:10px; padding:1px; font-size:15px; font-weight:bold; text-align:center;}
+.buy a:link,.buy a:hover,.buy a:active,.buy a:visited{padding:5px 12px 7px 12px; width:100px; background:#F60; border-radius:5px; color:#fff;}
+.bas a:link,.bas a:hover,.bas a:active,.bas a:visited{padding:5px 12px 7px 12px; width:100px; background:#6C0; border-radius:5px; color:#fff;}
+.sidebox{background:#666; width:205px; padding:5px; color:#fff; border-radius:5px; text-align:center}

@@ -1,0 +1,14 @@
+# Binaries and archives
+*.zip
+*.rar
+*.exe
+*.tar.gz
+*.7z
+
+# IDE/OS files
+.DS_Store
+Thumbs.db
+*.swp
+
+# XAMPP
+xampp/
