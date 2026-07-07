@@ -1,0 +1,12 @@
+1 : Can not connect to database in page class/theme.php funtion reurnThemeName
+2 : Can not run query in page class/theme.php funtion reurnThemeName
+3 : Can not connect to database in page class/theme.php funtion reurnLanguage
+4 : Can not run query in page class/theme.php funtion reurnLanguage
+5 : Can not connect to database in page login.php
+6 : Can not run query in page login.php
+7 : Can not connect to database in page class/table.php
+8 : Can not run query in page class/table.php
+
+
+
+

@@ -93,3 +93,70 @@ function deletePurchase(url)
 	xmlhttp.open("GET",url,true);
 	xmlhttp.send();
 }
+function checkEncCode(url){
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  xmlhttp=new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	xmlhttp.onreadystatechange=function()
+	  {
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+		document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+		}
+	}
+	encCode=document.getElementById('encCode').value;
+	url+='?encCode='+encCode;
+	xmlhttp.open("GET",url,true);
+	xmlhttp.send();
+}
+function checkForLatestUpdate(){ //phase 2
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  xmlhttp=new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	xmlhttp.onreadystatechange=function()
+	  {
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+		document.getElementById("latestVersion").innerHTML=xmlhttp.responseText;
+		}
+	}
+	url="ghif.org/latestVersion.php";
+	xmlhttp.open("GET",url,true);
+	xmlhttp.send();
+}
+function createDB(url){
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  xmlhttp=new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	xmlhttp.onreadystatechange=function()
+	  {
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+		document.getElementById("hostName").value="localhost";
+		document.getElementById("dbName").value="ghif";
+		document.getElementById("dbUser").value="ghif";
+		document.getElementById("dbPass").value="111111";
+		document.getElementById("createDbDiv").innerHTML=xmlhttp.responseText;
+		}
+	}
+	xmlhttp.open("GET",url,true);
+	xmlhttp.send();
+}

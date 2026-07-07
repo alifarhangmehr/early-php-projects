@@ -1,0 +1,51 @@
+<!doctype html>  
+<html dir="ltr" lang="en-US">
+	<head>
+
+		<title>jqPagination, a jQuery pagination plugin (obviously)</title>
+	
+		<!-- generic demo style -->
+		<link rel="stylesheet" href="./demo/css/reset.css" />
+		<link rel="stylesheet" href="./demo/css/demo.css" />
+	
+		<!-- jqPagination styles -->
+		<link rel="stylesheet" href="./css/jqpagination.css" />
+		
+		<!-- scripts -->
+		<script src="./js/jquery-1.7.2.min.js"></script>
+		<script src="./js/jquery.jqpagination.js"></script>
+		<script src="./js/scripts.js"></script>
+		
+		<!-- generic demo script -->
+		<script src="./demo/js/demo.js"></script>
+		
+		<!-- shiv me up baby! -->
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+	<body>
+<div class="gigantic pagination">
+			    <a href="#" class="first" data-action="first">&laquo;</a>
+			    <a href="#" class="previous" data-action="previous">&lsaquo;</a>
+				<input type="text" readonly="readonly" data-max-page="400" />
+                <a href="#" class="next" data-action="next">&rsaquo;</a>
+			    <a href="#" class="last" data-action="last">&raquo;</a>
+			</div>
+		<script type="text/javascript" src="http://www.observerapp.com/record.js"></script>
+		<script type="text/javascript">
+			try { Observerapp.record("4e57994f9c529e395d014904"); } catch(e) {};
+			
+		</script>
+        <script language="javascript" type="text/javascript">
+		$('.pagination').jqPagination({
+			paged: function(page) {
+				//alert(page);
+				// do something with the page variable
+				window.location = "showGood.php?limits="+page;
+			}
+		});
+		</script>
+	</body>
+</html>

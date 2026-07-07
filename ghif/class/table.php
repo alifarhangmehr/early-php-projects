@@ -93,7 +93,7 @@ class table{
 					<input type="hidden" name="oaId" id="oaId" value="'.$row['oaId'].'" />
 					<input type="hidden" name="sendPage" id="sendPage" value="showOa" />
 					<table border="0" cellpadding="0" cellspacing="0">
-					<tr><td><input type="image" src="../themes/'.$_SESSION['theme'].'/images/paperIcon.png" align="middle" width="50px" height="40px" style="border:hidden" />
+					<tr><td><input type="image" src="../themes/'.$_SESSION['theme'].'/images/paperIcon1.png" align="middle" style="border:hidden" />
 					</td></tr></table>
 					</form></td>';	
 			}//optional
@@ -111,15 +111,12 @@ class table{
 			$result2=$this->ifValueExist($query2);
 		
 			if($result2)
-				echo '<td><a href="showCheck.php?accountId='.$row['accountId'].'"><img src="../themes/'.$_SESSION['theme'].'/images/checkIcon1.png" alt="" width="40px" height="40px" /></a></td>';
+				echo '<td><a href="showCheck.php?accountId='.$row['accountId'].'"><img src="../themes/'.$_SESSION['theme'].'/images/checkIcon1.png" alt="" width="50px" height="26px" /></a></td>';
 			else
 				echo '<td><a href="addCheck.php?accountId='.$row['accountId'].'"><img src="../themes/'.$_SESSION['theme'].'/images/plusIcon1.png" alt="" width="40px" height="40px" /></a></td>';
 			
 		}//optional
-		
-		
-		
-		
+				
 		if($pageName=='showStore'){
 			if($row[$fieldName3[0][0]]=='yes')
 				echo '<td><a href="'.$_SERVER['PHP_SELF'].'" ><img src="../themes/'.$_SESSION['theme'].'/images/yesIcon.png" alt="" height="30px" width="30px" /></a></td>';
@@ -159,17 +156,22 @@ class table{
 			echo '<td><img src="../themes/'.$_SESSION['theme'].'/images/removeIcon1.png" onclick="deletePurchase(\'deleteEditPurchaseA.php?factorId='.$row['factorId'].'&purchaseId='.$row['purchaseId'].'\')" style="cursor:pointer" /></td>';
 		}//optional
 		if($pageName=='showCustomer'){
-				echo '<td><img src="'.$row['photoSource'].'" alt="" width="40px" height="40px" /></td>';
+				echo '<td><img src="../images/customers/thumb'.$row['customerId'].'.jpg" alt="" width="40px" height="40px" /></td>';
 			
 		}//optional
+		if($pageName=='showEmploye'){
+				echo '<td><img src="../images/employes/thumb'.$row['employeId'].'.jpg" alt="" width="40px" height="40px" /></td>
+				<td><form method="post" action="acLevelCpanel.php"><input type="hidden" name="employeId" id="employeId" value="'.$row['employeId'].'" /><input type="image" src="../themes/'.$_SESSION['theme'].'/images/lockIcon1.png" /></form></td>';
+		}//optional
+		
 		if($pageName=='showFactor'){
 			if($row['clear']==1){
-				echo '<td align="center" class="tdwidth">Cleared</td>';
-				echo '<td align="center" class="tdwidth">Cleared</td>';
+				echo '<td align="center" class="tdwidth"><img src="../themes/'.$_SESSION['theme'].'/images/warningIcon1.png" /></td>';
+				echo '<td align="center" class="tdwidth"><img src="../themes/'.$_SESSION['theme'].'/images/warningIcon1.png" /></td>';
 			}else{
 				if($row['canceled']==1){
-					echo '<td align="center" class="tdwidth"><img src="../themes/'.$_SESSION['theme'].'/images/yesIcon1.png" onclick="showUnCancelFactorDiv(\''.$row[$fieldId].'\')" style="border:hidden; cursor:pointer" title="'.$table_uncancel_factor_title.'" /></td>';
-					echo '<td align="center" class="tdwidth">Canceled</td>';
+					echo '<td align="center" class="tdwidth"><img src="../themes/'.$_SESSION['theme'].'/images/undoIcon1.png" onclick="showUnCancelFactorDiv(\''.$row[$fieldId].'\')" style="border:hidden; cursor:pointer" title="'.$table_uncancel_factor_title.'" /></td>';
+					echo '<td align="center" class="tdwidth"><img src="../themes/'.$_SESSION['theme'].'/images/cancelIcon1.png" /></td>';
 					}else{
 					echo '<td align="center" class="tdwidth"><img src="../themes/'.$_SESSION['theme'].'/images/removeIcon1.png" onclick="showCancelFactorDiv(\''.$row[$fieldId].'\')" style="border:hidden; cursor:pointer" title="'.$table_cancel_factor_title.'" /></td>';
 					echo '<td align="center" class="tdwidth"><form method="post" action="edit'.$pageInfo['preName'].'.php"><input type="hidden" name="'.$fieldId.'" id="'.$fieldId.'" value="'.$row[$fieldId].'" /><input type="image" src="../themes/'.$_SESSION['theme'].'/images/editIcon1.png" style="border:hidden" /></form></td>';
@@ -216,8 +218,9 @@ echo '</tr>';
 		if(!$connector->dbConnect()) echo 'Error No. 7';
 		$result=$connector->queryRun($query);
 		if(!$result){ echo 'Error No. 546'; return false;}
-		else return($id); 
-		
+		else {
+			return($id); 
+		}
 
 	}
 	

@@ -1,0 +1,40 @@
+body{
+font-family:Tahoma, Geneva, sans-serif;
+background:#ead816;
+}
+
+.registerInput{
+border: 1px solid #999;
+box-shadow: 0 0 2px 1px #CCC;	
+width: 255px;
+height: 25px;
+font-family: Tahoma, Geneva, sans-serif;
+}
+
+.registerSubmit{
+border: thin solid #6C6;
+background-color: #6C6;
+box-shadow: 0 0 1px 1px #696;
+width: 70px;
+height: 30px;
+color:#FFF;
+font-family: Tahoma, Geneva, sans-serif;
+font-weight: bold;
+}
+
+.serialInput{
+border: 1px solid #999;
+box-shadow: 0 0 2px 1px #CCC;
+font-family: Tahoma, Geneva, sans-serif;
+width:35px;
+height:20px;
+background:#ead816;	
+}
+.activationSubmit{
+font-family:Tahoma, Geneva, sans-serif;
+cursor: pointer;
+background:#630;
+color:#FFF;
+width: 80px;
+}
+
